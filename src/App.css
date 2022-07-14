@@ -5,7 +5,7 @@
 }
 
 .App-logo {
-  height: 15vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -14,17 +14,32 @@
   align-items: left;
   justify-content: left;
   font-size: 2em;
-  color: aqua;
+  font-weight: 600;
+  color: #61dafb;
   background-color: #1a1c1f;
+  align-items: center;
 }
 
 .App-main {
+  padding-top: 20px;
   color: white;
   justify-content: center;
   text-align: left;
   margin-left: 10px;
+  font-size: 1em;
+  font-weight: 500;
 }
 
-.App-list::before {
-  color:aqua;
+.App-main ul {
+  list-style: none;
 }
+
+.App-main ul li::before {
+  content: "\2022";
+  color: #61dafb;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
